@@ -1,0 +1,286 @@
+
+/* Medium devices tablets, 768px and up */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    button:focus {
+	outline: none;
+    }
+    
+    .navbar-nav {
+	text-align: center;
+    background: #95e1d3;
+}
+    .navbar .navbar-nav .nav-link::after {
+	display: none;
+}   
+    .banner-text h1 {
+	font-size: 125px;
+}
+    #banner {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+    #about {
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+    .heading {
+	padding-bottom: 50px;
+}
+    #service {
+	padding-top: 70px;
+}
+    .service-item {
+	padding-bottom: 50px;
+}
+    #feedback .left {
+	display: none!important;
+} 
+    #feedback .right {
+	display: none!important;
+}   
+    
+    
+    
+    
+    
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    button:focus {
+	outline: none;
+    }
+    
+    .navbar-nav {
+	text-align: center;
+    background: #95e1d3;
+}
+    .navbar .navbar-nav .nav-link::after {
+	display: none;
+}   
+    .banner-text h1 {
+	font-size: 50px;
+}
+	.banner-text h3 {
+	font-size: 36px;
+}
+    #banner {
+	padding-top: 125px;
+}
+    #banner {
+	padding-bottom: 90px;
+
+}
+    .banner-text h1::after {
+	bottom: 47px;
+}
+    .banner-text h1 {
+	padding-bottom: 95px;
+}
+    #about {
+	padding-top: 55px;
+}
+    .heading {
+	padding-bottom: 55px;
+}
+    .about-item {
+	margin-bottom: 30px;
+}
+    #about {
+	padding-top: 92px;
+	padding-bottom: 50px;
+}
+    #service {
+	padding-top: 50px;
+}
+    .heading {
+	padding-bottom: 43px;
+}
+.service-item {
+	text-align: center;
+}
+    .service-item i {
+	font-size: 35px;
+	color: #95e1d3;
+	line-height: 35px;
+	margin-bottom: 10px;
+}
+    .service-item {
+	padding-bottom: 30px;
+}
+    .heading {
+	padding-bottom: 20px;
+}
+    .feedback-comments p {
+	font-size: 20px;
+	line-height: 28px;
+}
+    .feedback-comments{
+        padding-left: 20px;
+}
+    .feedback-slider i {
+	width: 136px;
+	height: 136px;
+	line-height: 136px;
+	margin-top: 2px;
+}
+    #feedback .left {
+	display: none!important;
+} 
+    #feedback .right {
+	display: none!important;
+}  
+    .feedback-slider i {
+	margin-bottom: 20px;
+}
+    #team {
+	padding-top: 50px;
+}
+    .team-overlay .social i {
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+    line-height: 30px;
+}
+    .team-text h3 {
+	padding-top: 14px;
+}
+    #team {
+	padding-bottom: 40px;
+}
+    #gallery {
+	padding-bottom: 45px;
+}
+    #footer {
+	padding-top: 35px;
+}
+    .blog-info{
+        padding: 0 15px;
+    }
+    .copyright p {
+	line-height: 40px;
+}
+    .more-photos a {
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+    .content p {
+	font-size: 14px;
+}
+      
+} 
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    button:focus {
+	outline: none;
+    }
+    
+    .navbar-nav {
+	text-align: center;
+    background: #95e1d3;
+}
+    .navbar .navbar-nav .nav-link::after {
+	display: none;
+}   
+    .banner-text h1 {
+	font-size: 50px;
+}
+	.banner-text h3 {
+	font-size: 36px;
+}
+    #banner {
+	padding-top: 125px;
+}
+    #banner {
+	padding-bottom: 90px;
+
+}
+    .banner-text h1::after {
+	bottom: 47px;
+}
+    .banner-text h1 {
+	padding-bottom: 95px;
+}
+    #about {
+	padding-top: 55px;
+}
+    .heading {
+	padding-bottom: 55px;
+}
+    .about-item {
+	margin-bottom: 30px;
+}
+    #about {
+	padding-top: 92px;
+	padding-bottom: 50px;
+}
+    #service {
+	padding-top: 50px;
+}
+    .heading {
+	padding-bottom: 43px;
+}
+.service-item {
+	text-align: center;
+}
+    .heading {
+	padding-bottom: 15px;
+}
+    .service-item {
+	padding-bottom: 20px;
+}
+    .service-item i {
+	margin-bottom: 5px;
+}
+    .feedback-comments p {
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+}
+    .feed-icon{
+        text-align: center;
+    }
+    #team {
+	padding-top: 50px;
+}
+
+    .team-text h3 {
+	padding-top: 15px;
+}
+    #team {
+	padding-bottom: 35px;
+}
+    #gallery {
+	padding-bottom: 50px;
+}
+    #footer {
+	padding-top: 40px;
+}
+   #feedback .left {
+	display: none!important;
+} 
+    #feedback .right {
+	display: none!important;
+} 
+    .feedback-slider i {
+	margin-bottom: 20px;
+}
+    .blog-info{
+        padding: 0 15px;
+    }
+    .copyright p {
+	line-height: 40px;
+}
+    .more-photos a {
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+
+    
+    
+    
+    
+    
+}

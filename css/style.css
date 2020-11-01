@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+/*============ Navbar Part CSS ================*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar-toggler i{
+    color: #fff;
+}
+.bg{
+    background: #95e1d3;   
+    height: 70px;
+    animation: menu 1.5s;
+}
+@keyframes menu {
+    from{top:-50px}
+    to {top:0}
+}
+.navbar .navbar-nav .nav-link {
+	color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 80px;
+    transition: all linear .3s;
+    position: relative;
+}
+.navbar .navbar-nav .nav-item{
+    padding: 0 27px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	 padding-right: 0; 
+	 padding-left: 0; 
+}
+.navbar .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fce38a;
+    left: 0;
+    bottom: 28px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #fce38a;
+}
+.navbar .navbar-nav .nav-link:hover:after{
+    opacity: 1;
+    width: 100%;
+}
+/*============ Banner Part CSS ================*/
+#banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 234px;
+    padding-bottom: 245px;
+    position: relative;
+}
+#banner:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    opacity: 0.9;
+}
+.banner-text {
+    position: relative;
+    z-index: 999;
+}
+.banner-text h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 11px;
+}
+.banner-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    padding-bottom: 141px;
+}
+.banner-text h1:after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    left: 50%;
+    bottom: 86px;
+    transform: translateX(-50%);
+    background: #fff;
+}
+.banner-text a {
+    padding: 12px 30px;
+    border: 3px solid #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all linear .3s;
+}
+.banner-text a:hover {
+    background: #fff;
+    color: #444;
+}
+/*============ About Part CSS ================*/
+#about {
+    padding-top: 92px;
+    padding-bottom: 110px;
+}
+.heading {
+    padding-bottom: 80px;
+}
+.heading h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #333;
+    font-weight:700;
+    text-transform: uppercase;
+    padding-bottom: 69px;
+    position: relative;
+}
+.heading h2:after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    left: 50%;
+    bottom:35px;
+    transform: translateX(-50%);
+    background: #f38181;
+}
+.heading p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
+    line-height: 24px;
+    font-weight:400;
+}
+.about-item{
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.content i {
+    font-size: 22px;
+    color: #fff;
+}
+.content p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.about-item:hover .overlay {
+    height: 100%;
+    opacity: 0.9;
+}
+
+/* ========== Counter BAR ========== */
+#counter{
+    background: #95e1d3;
+    padding-top: 89px;
+    padding-bottom: 89px;
+}
+.conuter-item h3{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.conuter-item p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+/* ========== Service BAR ========== */
+#service{
+    background: #fff;
+    padding-top: 110px;
+}
+.service-item{
+    padding-bottom: 100px;
+}
+.service-item i{
+    font-size: 35px;
+    color: #95e1d3;
+    line-height: 35px;
+}
+.service-item h3{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+.service-item p{
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+}
+
+/* ========== FEED BACK BAR ========== */
+#feedback{
+    background: #f8f8f8;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.feedback-slider i{
+    width: 144px;
+    height: 144px;
+    line-height: 144px;
+    font-size: 62px;
+    text-align: center;
+    color: #95e1d3;
+    border: 3px solid #95e1d3;
+}
+.feedback-comments p{
+    color: #999;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 36px;
+    font-style: italic;
+}
+.feedback-comments h3{
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
+    padding-left: 70px;
+    position: relative;
+}
+.feedback-comments h3::after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.icon-main{
+    position: relative;
+}
+#feedback .left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: #cfcfcf;
+    font-size: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#feedback .right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: #cfcfcf;
+    font-size: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* ========== NAV BAR ========== */
+#team{
+    background: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.team-img {
+    position: relative;
+}
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    opacity: 0;
+    transition: all linear .4s;
+}
+.team-overlay .social i{
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 28px;
+    background: #fce38a;
+    color: #f38181;
+    transition: all linear .3s;
+    margin: 0 -1px;
+
+}
+.team-overlay .social i:hover{
+    background: #f38181;
+    color: #fff;
+    cursor: pointer;
+}
+.team-item{
+    position: relative;
+}
+.team-item:hover .team-overlay {
+    opacity: .9;
+}
+.team-text h3{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+.team-text p{
+    color: #999;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+/* ========== GALLERY BAR ========== */
+#gallery{
+    background: #fff;
+    padding-bottom: 96px;
+}
+.gallery-text i{
+    font-size: 30px;
+    color: #fff;
+}
+.gallery-text h3{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.gallery-text p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+.work-img{
+    position: relative;
+}
+.gallery-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    opacity: 0;
+    transition: all linear .3s;
+    
+}
+.work-img:hover .gallery-overlay{
+    opacity: .9;
+}
+
+/* ========== FOOTER BAR ========== */
+#footer {
+    background: #f8f8f8;
+    padding-top: 80px;
+}
+.footer-logo {
+    padding-bottom: 36px;
+}
+.footer-item p{
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px;
+}
+.footer-item h6 {
+    font-size: 14px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-top: 29px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+}
+.footer-item h6 span {
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer-item h5{
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 38px;
+}
+.footer-social i {
+    color: #95e1d3;
+    font-size: 16px;
+    margin-left: 18px;
+}
+.subscribe .form-control {
+    height: 38px;
+    border-radius: 0;
+    border: 1px solid #e7e7e7;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.sub {
+    position: relative;
+}
+.subscribe .btn {
+    padding: 6px 34px;
+    background: #95e1d3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 28px;
+}
+.blog-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+.blog-main {
+    padding-bottom: 30px;
+}
+.blog-img {
+    border: 1px solid #f8f8f8;
+}
+.more-photos{
+    padding-top: 18px;
+}
+.more-photos a {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 13px;
+}
+.subscribe {
+    padding-bottom: 48px;
+}
+.copyright {
+    border-top: 1px solid #ddd;
+}
+.copyright p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 14px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+.copyright p span {
+    color: #f38181;
+}
+
+/* ========== NAV BAR ========== */
+
+.back-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+}
+.back-to-top i{
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+/* ==========  Pre-Loader START CSS =========  */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99999;
+    height: 100%;
+}
+.loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
